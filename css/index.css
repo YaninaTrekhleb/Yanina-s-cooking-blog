@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.main-menu a {
+    color: black;
+    white-space: nowrap;
+}
+
+.main-menu a:hover {
+    color: #ffebcc;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.main-menu ul li {
+    padding: 2rem;
+}
+
+.banner {
+     overflow: hidden;
+     margin-bottom: 1rem;
+}
+
+.banner img {
+     width: 100%;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered p {
+   margin-top: 0; 
+}
+
+#home {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.content-image {
+    float: left;
+    width: 40%;
+    margin-right: 2rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recipe {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    flex-grow: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.recipe img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.recipe a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+#recipes {
+    margin-bottom: 2rem;
+}
+
+.social-image {
+    width: 80px;
+    height: 80px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#contact form {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+#contact form div {
+    margin-bottom: 1.5rem;
+}
+
+#contact form input:not([type=submit]) {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#contact form input[type=submit] {
+    background-color: #ffebcc;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}

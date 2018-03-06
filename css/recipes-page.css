@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.main-menu a {
+    color: black;
+    white-space: nowrap;
+}
+
+.main-menu a:hover {
+    color: #ffebcc;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.main-menu ul li {
+    padding: 2rem;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered p {
+   margin-top: 0; 
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.recipe-content {
+   
+}
+
+.recipe-image {
+    width: 50%;
+    float: left;
+}
+
+.recipe-text {
+    width: 50%;
+    float: right;
+}
+
+.recipe-image img {
+    width: 100%;
+}
+
+.recipe-text p {
+    padding: 0 1rem 1rem 1rem;
+    margin-top: 0;
+    font-size: 1.25rem;
+}

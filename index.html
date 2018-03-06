@@ -1,68 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yanina's cooking blog</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
+
 <body>
-    <div class="menu">
+    <div class="main-menu">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#recipes">Recipes</a></li>
-            <li><a href="#follow-me">Follow me</a></li>
+            <li><a href="#social-links">Follow me</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
     
-    <img src="images/chocolate-candies.jpg" alt="chocolate-candies">
+    <div class="banner">
+        <img src="images/chocolate-candies.jpg" alt="chocolate-candies">
+    </div>
     
     <div id="home">
-        <h1>Yanina's cooking blog</h1>
-        <h2>Easy, tasty recipes</h2>
-        <img src=images/yanina-photo.jpg alt="yanina-photo">
+        <div class="centered">
+            <h1>Yanina's cooking blog</h1>
+            <h2>Easy, tasty recipes</h2>
+        </div>
+        <img src="images/yanina-photo.jpg" class="content-image" alt="yanina-photo">
         <p>Hello World! I’m glad to see you on my web-site.</p>
         <p>My name is Yanina and this is my blog about food and cooking.</p>
         <p>I like to spend my time by exploring new kitchens of the world and try new recipes.</p>
         <p>Almost all recipes are easy and tasty. You will spend only 30-40 minutes to prepare them. And you and your belly will be satisfied with the result.</p>
         <p>Let's try together!</p>
     </div>
-    
+
     <div id="recipes">
-        <h2>Recipes</h2>
+        <div class="centered">
+            <h2>Recipes</h2>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe">
+                <a href="/recipes-page-1.html">
+                    <img src="images/eggplant-salad.jpg" alt="eggplant-salad">
+                </a>
+                <a href="/recipes-page-1.html">
+                    Eggplant and feta cheese salad
+                </a>
+            </div>
+        
+            <div class="recipe">
+                <a href="/recipes-page-2.html">
+                    <img src="images/shrimp-salad.jpg" alt="shrimp-salad">
+                </a>
+                <a href="/recipes-page-2.html">
+                    Graipefruit shrimp salad
+                </a>
+            </div>
+        
+            <div class="recipe">
+                <a href="/recipes-page-3.html">
+                    <img src="images/pears-salad.jpg" alt="pears-salad">
+                </a>
+                <a href="/recipes-page-3.html">
+                    Blue cheese and pear salad
+                </a>
+            </div>
+        </div>
     </div>
-    <img src="images/eggplant-salad.jpg" alt="eggplant-salad">
-    <a href="/recipes-page-1.html"><p>Salad with baked eggplant, red pepper and feta cheese</p></a>
-    <img src="images/shrimp-salad.jpg" alt="shrimp-salad">
-    <a href="/recipes-page-2.html"><p>Graipefruit shrimp salad</p></a>
-    <img src="images/pears-salad.jpg" alt="pears-salad">
-    <a href="/recipes-page-3.html"><p>Blue cheese, pear and chicken salad</p></a>
-    
-    <div id="follow-me">
-        <h2>Follow me</h2>
-        <p>Get all the latest updates</p>
-        <img src="images/instagram-icon.png" alt="instagram-icon">
-        <img src="images/pinterest-icon.png" alt="pinterest-icon">
-        <img src="images/fb-icon.png" alt="fb-icon">
+
+    <div id="social-links">
+        <div class="centered"> 
+           <h2>Follow me</h2>
+           <p>Get all the latest updates</p>
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/yanina_is_cooking/">
+                <img src="images/instagram-icon.png" class="social-image" alt="instagram-icon">
+            </a>
+            
+            <a href="https://www.pinterest.com/yanisavchenko/yaninas-cooking-blog/">
+                <img src="images/pinterest-icon.png" class="social-image" alt="pinterest-icon">
+            </a>
+            
+            <a href="https://www.facebook.com/yaninaiscooking/?ref=bookmarks">
+                <img src="images/fb-icon.png" class="social-image" alt="fb-icon">
+            </a>
+        </div>
     </div>
-    
+
     <div id="contact">
-        <h2>Contact me</h2>
+        <div class="centered">
+            <h2>Contact me</h2>
+            <form>
+                <div>
+                    Your name:<br>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    Your email:<br>
+                    <input type="text" name="email">
+                </div>
+                <div>
+                    Send a Note:<br>
+                    <input type="text" name="note">
+                </div>
+                <div>
+                    <div class="centered">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <form>
-        <div>
-        Your name:<br>
-            <input type="text" name="name">
-        </div>
-        <div>Your email:<br>
-            <input type="text" name="email">
-        </div>
-        <div>Send a Note:<br>
-        <input type="text" name="note"> <br><br>
-        <input type="submit" value="Send">
-        </div>
-    </form>
 </body>
+
 </html>
