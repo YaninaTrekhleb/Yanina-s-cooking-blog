@@ -12,6 +12,8 @@ function onContactFormSubmit(event) {
       note: note,
   };
   
+  $('#loader').show();
+  
    $.ajax({
         url: "https://tranquil-sierra-86540.herokuapp.com/yanisavchenko@gmail.com",
         method: "POST",
@@ -19,12 +21,14 @@ function onContactFormSubmit(event) {
         dataType: "json"
     })
     .done(function() {
+        $('#loader').hide();
         $('#contact-form input[name=name]').val('');
         $('#contact-form input[name=email]').val('');
         $('#contact-form input[name=note]').val('');
         alert('Message was sent');
     })
     .fail(function() {
+        $('#loader').hide();
         alert('Error');
     });
 }
