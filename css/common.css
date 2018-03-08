@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
-* {
+html {
     font-family: 'Cabin', sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
 }
 
 .main-menu a {
@@ -19,10 +24,12 @@
     justify-content: center;
     list-style-type: none;
     font-size: 2rem;
+    margin: 0;
 }
 
 .main-menu ul li {
-    padding: 2rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .banner {
@@ -54,10 +61,29 @@
 
 h1 {
     margin-bottom: 0;
+    font-size: 3rem;
 }
 
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover {
+    color: #ffebcc;
+}
+
+
 h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.5rem;
 }
 
 .content-image {
@@ -67,7 +93,8 @@ h2 {
 }
 
 #home p {
-    font-size: 1.5rem;
+    margin-top: 0;
+    font-size: 1rem;
 }
 
 .recipe-container {
@@ -93,7 +120,7 @@ h2 {
     display: block;
     width: 100%;
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #recipes {
@@ -117,6 +144,9 @@ h2 {
     margin-right: 0.5rem;
 }
 
+#social-links {
+    margin-bottom: 2rem;
+}
 #contact form {
     font-size: 1.5rem;
     width: 50%;
@@ -140,4 +170,30 @@ h2 {
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
+}
+
+.recipe-image {
+    width: 50%;
+    float: left;
+}
+
+.recipe-text {
+    width: 50%;
+    float: right;
+}
+
+.recipe-image img {
+    width: 100%;
+}
+
+.recipe-text p {
+    padding: 0 1rem 1rem 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.recipe-text ul {
+    font-size: 1.25rem;
+    margin-top: 0;
 }

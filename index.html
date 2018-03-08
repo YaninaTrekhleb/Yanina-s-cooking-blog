@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yanina's cooking blog</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
+    <div class="centered">
+        <h1>Yanina's cooking blog</h1>
+        <h3>Easy, tasty recipes</h3>
+    </div>
     <div class="main-menu">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -24,10 +28,6 @@
     </div>
     
     <div id="home">
-        <div class="centered">
-            <h1>Yanina's cooking blog</h1>
-            <h2>Easy, tasty recipes</h2>
-        </div>
         <img src="images/yanina-photo.jpg" class="content-image" alt="yanina-photo">
         <p>Hello World! I’m glad to see you on my web-site.</p>
         <p>My name is Yanina and this is my blog about food and cooking.</p>
@@ -73,7 +73,7 @@
     <div id="social-links">
         <div class="centered"> 
            <h2>Follow me</h2>
-           <p>Get all the latest updates</p>
+           <h3>Get all the latest updates</h3>
         </div>
         <div class="social-buttons">
             <a href="https://www.instagram.com/yanina_is_cooking/">
@@ -89,11 +89,11 @@
             </a>
         </div>
     </div>
-
+    
     <div id="contact">
         <div class="centered">
             <h2>Contact me</h2>
-            <form action="https://formspree.io/yanisavchenko@gmail.com" method="POST">
+            <form id="contact-form">
                 <div>
                     Your name:<br>
                     <input type="text" name="name">
@@ -114,6 +114,12 @@
             </form>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/js/form.js"></script>
 </body>
 
 </html>
