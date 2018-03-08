@@ -25,6 +25,7 @@ body {
     list-style-type: none;
     font-size: 2rem;
     margin: 0;
+    padding: 0;
 }
 
 .main-menu ul li {
@@ -62,11 +63,13 @@ body {
 h1 {
     margin-bottom: 0;
     font-size: 3rem;
+    text-align: center;
 }
 
 h1 a {
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 h1 a:hover {
@@ -90,6 +93,7 @@ h3 {
     float: left;
     width: 40%;
     margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 #home p {
@@ -175,6 +179,7 @@ h3 {
 .recipe-image {
     width: 50%;
     float: left;
+    margin-bottom: 2rem;
 }
 
 .recipe-text {
@@ -197,3 +202,61 @@ h3 {
     font-size: 1.25rem;
     margin-top: 0;
 }
+
+@media only screen and (max-width: 700px) {
+    #contact form {
+        width: 90%;
+    }
+    
+    .main-menu ul {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    
+     .main-menu ul li {
+         padding: 0.5rem;
+         text-align: center;
+     }
+     
+     .recipe-container {
+         flex-direction: column;
+     }
+     
+     .recipe {
+         margin-bottom: 2.5rem;
+     }
+     
+     .recipe a {
+         font-size: 1.5rem;
+     }
+     
+     h1 {
+         font-size: 2rem;
+     }
+     
+     #home p {
+         font-size: 1.3rem;
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+     
+     .content-image {
+         width: 100%;
+     }
+     
+     .recipe-image {
+         width: 100%;
+         clear: both;
+     }
+     
+     .recipe-text {
+         width: 100%;
+         clear: both;
+     }
+     
+     h2 {
+         font-size: 1.5rem;
+         text-align: center;
+     }
+}
+
