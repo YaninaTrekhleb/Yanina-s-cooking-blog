@@ -17,10 +17,10 @@
     </div>
     <div class="main-menu">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#recipes">Recipes</a></li>
-            <li><a href="#social-links">Follow me</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" class="smooth">Home</a></li>
+            <li><a href="#recipes" class="smooth">Recipes</a></li>
+            <li><a href="#social-links" class="smooth">Follow me</a></li>
+            <li><a href="#contact" class="smooth">Contact</a></li>
         </ul>
     </div>
     <div class="banner">
@@ -96,15 +96,15 @@
             <form id="contact-form">
                 <div>
                     Your name:<br>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                 </div>
                 <div>
                     Your email:<br>
-                    <input type="text" name="email">
+                    <input type="email" name="email" required>
                 </div>
                 <div>
                     Send a Note:<br>
-                    <input type="text" name="note">
+                    <input type="text" name="note" required>
                 </div>
                 <div>
                     <div class="centered">
@@ -140,6 +140,7 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
 </body>
 
 </html>

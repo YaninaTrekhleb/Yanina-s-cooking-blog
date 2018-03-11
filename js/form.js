@@ -25,7 +25,6 @@ function onContactFormSubmit(event) {
         $('#contact-form input[name=name]').val('');
         $('#contact-form input[name=email]').val('');
         $('#contact-form input[name=note]').val('');
-        alert('Message was sent');
     })
     .fail(function() {
         $('#loader').hide();
